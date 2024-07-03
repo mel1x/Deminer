@@ -14,4 +14,4 @@ Install my-project with npm
     
 ## Demo
 
-You can touch demo on [vercel]([https://deminer.vercel.app/])
+You can touch demo on [vercel](https://deminer.vercel.app/)

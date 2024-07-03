@@ -1,0 +1,163 @@
+sparkly-text {
+  --sparkly-text-color: white
+}
+
+h1 {
+  font-size: 42px;
+}
+
+.mainZone {
+  display: flex;
+  flex-direction: row;
+  align-content: inherit;
+  justify-content: center;
+  gap: 16px;
+}
+
+.gameField {
+  position: relative;
+  z-index: 99;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+  gap: 3px;
+  background-color: #313131;
+  overflow: hidden;
+}
+.gamePanel {
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  width: 240px;
+  height: 100%;
+  background-color: #282828;
+  border-radius: 20px;
+}
+.gameMap {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  width: 240px;
+  height: 300px;
+  background-color: #282828;
+  border-radius: 20px;
+}
+
+.gameMiniMap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 192px;
+  height: 192px;
+  background-color: #222222;
+  gap: 3px;
+}
+.free {
+  background-color: #8ac926b0;
+}
+.bomb {
+  background-color: #ff595eb0;
+}
+
+.gamePanel h2 {
+  font-size: 26px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.gameMap h2 {
+  font-size: 26px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.gameInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.statInfo {
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.mineControlBut {
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #343434;
+  transition: .14s;
+}
+.mineControlBut:hover {
+  background-color: #373737;
+}
+.mineControlBut:focus {
+  background-color: #323232;
+}
+.gameStat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+}
+.scoreInfo {
+  font-weight: 500;
+  font-size: 23px;
+}
+.resetButton {
+  cursor: pointer;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 16px;
+  transition: .15s;
+  background-color: #343434;
+}
+.resetButton:hover {
+  background-color: #373737;
+}
+.resetButton:focus {
+  background-color: #323232;
+}
+
+.gameCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+  cursor: pointer;
+  transition: .14s;
+  background-color: #282828;
+}
+.correct {
+  color: #8ac926;
+}
+.incorrect {
+  color: #ff595e;
+}
+.gameCell:hover {
+  background-color: #2b2b2b;
+}
